@@ -1,0 +1,64 @@
+.other{
+    margin: 100px 0;
+
+    & h6{
+        display: none;
+    }
+    &_i{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+
+        
+
+        & article{
+            transition: 2s;
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &__card{
+        width: 360px;
+        height: 260px;
+        background-color: #6F1E4E;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-transform: uppercase;
+    }
+
+    &__card:last-child{
+        width: 100%;
+        height: 180px;
+        background-color: grey;
+    }
+
+    &__text{
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    &__text1{
+        font-size: 24px;
+        line-height: 28px;
+        color: $rose_color;
+    }
+
+    &__card1{
+        background-image: url(../img/woman.jpg);
+    }
+    &__card2{
+        background-image: url(../img/men.jpg);
+    }
+    &__card3{
+        background-image: url(../img/kids.jpg);
+    }
+    &__card4{
+        background-image: url(../img/accessories.jpg);
+    }
+}

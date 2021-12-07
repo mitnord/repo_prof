@@ -1,0 +1,31 @@
+.catalog{
+
+    &__head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 148px;
+
+
+        &__h1{
+            font-size: 24px;
+            line-height: 29px;
+            color: $rose_color;
+            text-transform: uppercase;
+        }
+
+        &__choice{
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: #636363;
+            text-transform: uppercase;
+            text-decoration-line: none;
+        }
+
+        &__choice:hover{
+            font-weight: 700;
+            color: $rose_color;
+        }
+    }
+}

@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Lato;
+}
+
+
+
+@import 'module/var';
+
+.container {
+    max-width: $media_width+20px;
+    width: 100%;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.fas{
+    margin-left: 9px;
+}
+
+@import 'module/mixin';
+
+@import 'module/header';
+@import 'module/heading';
+@import 'module/other';
+@import 'module/showcase';
+@import 'module/benefits';
+@import 'module/subscribe';
+@import 'module/footer';
+@import 'module/catalog';
+@import 'module/filter';
+@import 'module/product';
+@import 'module/collection';
+@import 'module/cart';
+@import 'module/scrollbar';
+@import 'module/registration';
+
+
+

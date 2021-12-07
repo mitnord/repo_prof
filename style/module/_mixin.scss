@@ -1,0 +1,23 @@
+@mixin btn-style ($btn_width) {
+    .btn{
+        margin-top: 17px;
+        width: $btn_width;
+        padding: 15px;
+        text-align: center;
+        background-color: $rose_color;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 19px;
+        color: #FFFFFF;
+    }
+    
+    .btn:hover{
+        color: $rose_color;
+        background-color: #FFFFFF;
+        border: 1px solid $rose_color;
+    }
+    
+    .link{
+        text-decoration: none;
+    }
+}

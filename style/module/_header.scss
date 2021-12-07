@@ -1,0 +1,124 @@
+.header{
+    background-color: #222222;
+    
+    &_i {
+        display: flex;
+        justify-content: space-between;
+        padding: 19px auto;
+    }
+
+    &__left{
+        padding: $header_padings 0;
+        
+        &__item:not(:last-child) {
+            margin-right: 41px;
+            text-decoration: none;
+        }
+    }
+
+    &__right{
+        padding: $header_padings+9px 0 $header_padings;
+        
+        display: flex;
+
+        &__menu {
+            
+        }
+        &__menu nav{
+            display: none;
+
+            & h5{
+                font-style: normal;
+                font-weight: bold;
+                font-size: 14px;
+                line-height: 17px;
+                color: #000000;
+                margin: 37px auto 53px 34px;
+            }
+
+            & ul{
+                margin-left: 33px;
+                font-size: 14px;
+                line-height: 17px;
+                color: #6F6E6E;
+                list-style: none;
+
+                & h6{
+                    font-size: 14px;
+                    line-height: 17px;
+                    color: #F16D7F;
+                    margin:  20px auto 12px 0;
+                    text-transform: uppercase;
+                }
+
+                & li>ul>li{
+                    margin:  12px auto 12px 0;
+
+                }
+            }
+        }
+
+        & i{
+            font-size: 40px;
+            color: white;
+        }
+
+        & input{
+            display: none;
+
+            &:checked + nav{
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                right: 0;
+                top: 87px;
+                -webkit-box-shadow: 4px 29px 41px 12px rgba(34, 60, 80, 0.2);
+-moz-box-shadow: 4px 29px 41px 12px rgba(34, 60, 80, 0.2);
+box-shadow: 4px 29px 41px 12px rgba(34, 60, 80, 0.2);
+            }
+        }
+        
+        &__item{
+            &:not(:last-child) {
+                margin-right: 33px;
+            }
+        }
+
+        &__cart{
+            display: flex;
+            justify-content: center;
+
+            position: relative;
+            
+        }
+        & span{
+            height: 19px;
+            width: max-content;
+            text-align:center;
+            position: absolute;
+            top: -5px;
+            right: -15px;
+            color: #FFFFFF;
+            background-color: $rose_color;
+            border-radius: 9px;
+            padding: 3px 5px;
+            font-size: 12px;
+            line-height: 14px;
+        }
+
+
+
+    }
+}
+
+
+@media (max-width:768px) and (min-width:377px){
+
+    
+
+
+
+
+
+}

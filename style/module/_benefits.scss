@@ -1,0 +1,37 @@
+.benefits{
+    background-color: #222224;
+    margin: 0 auto;
+    & h6{
+        display: none;
+    }
+    &_i{
+        display: flex;
+        gap: 30px;
+        padding: 104px;
+    }
+
+    &__item{
+        width: 360px;
+        height: 136px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+        &__h3{
+            margin: 28px auto 16px;
+            font-size: 19.96px;
+            line-height: 24px;
+            color: #FBFBFB;
+            text-align: center;
+        }
+
+        &__p{
+            font-weight: 300;
+            font-size: 13.972px;
+            line-height: 17px;
+            text-align: center;
+            color: #FBFBFB;
+        }
+    }
+}

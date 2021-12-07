@@ -1,0 +1,104 @@
+.collection{
+
+    &_i{
+        margin: 41px auto 65px;
+
+    }
+    &__caption{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+        margin: 0 auto 130px;
+        max-width: 555px;
+
+        &__h2{
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            color: $rose_color;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+        &__hr{
+            margin: 0 auto 12px;
+            width: 63px;
+            height: 3px;
+            background-color:$rose_color;
+            border: none;
+        }
+        &__h3{
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 22px;
+            color: #4D4D4D;
+            text-transform: uppercase;
+            margin-bottom: 48px;
+        }
+
+        &__p{
+            margin: 0 auto 32px;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 17px;
+            text-align: center;
+            color: #5E5E5E;
+        }
+
+        &__strong{
+            font-weight: 300;
+            font-size: 24px;
+            line-height: 29px;
+            color: #EF5B70;
+        }
+    }
+
+    &__filter{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-bottom: 49px;
+
+
+        &__d{
+            margin: 0 23px;
+        }
+
+        &__s{
+            list-style: none;
+        }
+    }
+
+    &__browse{
+
+
+        &__link{
+            text-decoration: none;
+            color: #F26376;
+            
+        }
+
+        &__cart{
+            font-size: 26px;
+            margin-right: 23px;
+            color: #EF5B70;
+        }
+
+        &__btn{
+            display: flex;
+            width: max-content;
+            margin: 48px auto 95px ;
+            padding: 15px 39px 15px 22px;
+            font-size: 16px;
+            line-height: 19px;
+            background-color: #FFFFFF;
+            border: 1px solid #FF6A6A; 
+            color: #F26376;
+        }
+
+        &__text{
+            margin-top: 2px;
+        }
+    }
+}

@@ -1,0 +1,24 @@
+.product{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__btn{
+        font-size: 22px;
+        width: 47px;
+        padding: 13px 17px;
+        text-align: center;
+        background: rgba(42, 42, 42, 0.15);
+
+        &:hover{
+            color: $rose_color;
+        }
+        &:first-child{
+            padding-left: 14px;
+        }
+        &:last-child{
+            padding-right: 14px;
+        }
+    }
+}

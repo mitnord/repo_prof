@@ -1,0 +1,43 @@
+.footer{
+    height: 79px;
+    background-color: #222224;
+    font-style: normal;
+
+    &_i{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: space-between;
+        color: #FBFBFB;
+
+        &__logo{
+            font-family: fontawesome;
+            display: flex;
+
+        }
+
+        &__img{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 31.45px;
+            height: 32px;
+            margin-right: 7px;
+            background-color: #FFFFFF;
+            text-decoration: none; 
+            color: #000000;
+            font-size: 100%;  
+                &:not(:last-child){
+                    margin-right: 7px;
+                }
+                &:hover{
+                    color: #FFFFFF;
+                    background-color: $rose_color;
+                }
+        }
+        
+
+    }
+
+}
