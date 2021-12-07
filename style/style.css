@@ -53,6 +53,7 @@ body {
 
 .header__right__menu nav {
   display: none;
+  height: 90vh;
 }
 
 .header__right__menu nav h5 {
@@ -141,7 +142,7 @@ body {
 }
 
 .heading {
-  height: 768px;
+  height: 90vh;
   background-color: #F1E4E6;
 }
 
