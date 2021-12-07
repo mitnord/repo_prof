@@ -1,5 +1,5 @@
 .heading{
-    height: 768px;
+    height: 90vh;
     background-color: #F1E4E6;
 
     &_i{
@@ -7,8 +7,11 @@
         align-items: center;
         justify-content: flex-end;
         height: 100%;
+        
         background: url(../img/muzhik_v_palto.png
-        ) no-repeat -215px center;
+        ) no-repeat -215px center ;
+        background-size: contain;
+        
 
         &__title{
             border-left: 12px solid $rose_color;
@@ -32,4 +35,72 @@
             }
         }
     }
+}
+
+@media (max-width:768px) and (min-width:376px){
+
+    .heading{
+        height: 50vh;
+
+        &_i{
+            background-position-x: -120px ;
+
+            &__title{
+                font-weight: 700;
+                font-size: 24px;
+                line-height: 28.8px;
+
+
+                &__b{
+                    font-weight: 900;
+                    font-size: 44px;
+                    line-height: 52.8px;
+                }
+                
+                &__f{
+                    font-weight: 700;
+                    font-size: 37px;
+                    line-height: 44.8px;
+                }
+            }
+        }
+    }
+
+}
+
+@media (max-width:375px){
+
+    
+    .heading{
+        height: 45vh;
+
+        &_i{
+
+            background: none;
+
+            
+            &__title{
+                min-height: 50px;
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 24px;
+
+
+                &__b{
+                    font-weight: 900;
+                    font-size: 38px;
+                    line-height: 45.6px;
+                }
+                
+                &__f{
+                    font-weight: 700;
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+            }
+        }
+    }
+
+
+
 }

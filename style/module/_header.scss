@@ -21,11 +21,10 @@
         
         display: flex;
 
-        &__menu {
-            
-        }
+
         &__menu nav{
             display: none;
+            height: 90vh;
 
             & h5{
                 font-style: normal;
@@ -113,12 +112,28 @@ box-shadow: 4px 29px 41px 12px rgba(34, 60, 80, 0.2);
 }
 
 
-@media (max-width:768px) and (min-width:377px){
+
+@media (max-width:375px){
 
     
+    .header{
 
 
+        &__left > img{
+            display: none;
+        }
 
+        &__right {
+            &> img{            
+            display: none;
+            }
+            &__cart{
+                display: none;
+            }
+            &__menu{
+                margin-right: 0;
+            }
+        }
 
-
+    }
 }

@@ -35,3 +35,22 @@
         }
     }
 }
+
+
+@media (max-width:768px) {
+
+    .benefits{
+        &_i{
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+            
+        }
+
+        &__item{
+            width: 100%;
+            height: min-content;
+            margin: 0 auto;
+        }
+    }
+}

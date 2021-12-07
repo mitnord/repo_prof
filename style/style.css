@@ -53,6 +53,7 @@ body {
 
 .header__right__menu nav {
   display: none;
+  height: 90vh;
 }
 
 .header__right__menu nav h5 {
@@ -140,8 +141,23 @@ body {
   line-height: 14px;
 }
 
+@media (max-width: 375px) {
+  .header__left > img {
+    display: none;
+  }
+  .header__right > img {
+    display: none;
+  }
+  .header__right__cart {
+    display: none;
+  }
+  .header__right__menu {
+    margin-right: 0;
+  }
+}
+
 .heading {
-  height: 768px;
+  height: 90vh;
   background-color: #F1E4E6;
 }
 
@@ -157,6 +173,7 @@ body {
           justify-content: flex-end;
   height: 100%;
   background: url(../img/muzhik_v_palto.png) no-repeat -215px center;
+  background-size: contain;
 }
 
 .heading_i__title {
@@ -181,6 +198,55 @@ body {
   color: #F16D7F;
 }
 
+@media (max-width: 768px) and (min-width: 376px) {
+  .heading {
+    height: 50vh;
+  }
+  .heading_i {
+    background-position-x: -120px;
+  }
+  .heading_i__title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+  .heading_i__title__b {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 52.8px;
+  }
+  .heading_i__title__f {
+    font-weight: 700;
+    font-size: 37px;
+    line-height: 44.8px;
+  }
+}
+
+@media (max-width: 375px) {
+  .heading {
+    height: 45vh;
+  }
+  .heading_i {
+    background: none;
+  }
+  .heading_i__title {
+    min-height: 50px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .heading_i__title__b {
+    font-weight: 900;
+    font-size: 38px;
+    line-height: 45.6px;
+  }
+  .heading_i__title__f {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
 .other {
   margin: 100px 0;
 }
@@ -195,6 +261,9 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   gap: 30px;
 }
 
@@ -209,7 +278,7 @@ body {
 }
 
 .other__card {
-  width: 360px;
+  width: 30%;
   height: 260px;
   background-color: #6F1E4E;
   display: -webkit-box;
@@ -258,6 +327,12 @@ body {
 
 .other__card4 {
   background-image: url(../img/accessories.jpg);
+}
+
+@media (max-width: 375px) {
+  .other__card {
+    width: 100%;
+  }
 }
 
 .showcase__head {
@@ -470,8 +545,28 @@ body {
   color: #FBFBFB;
 }
 
+@media (max-width: 768px) {
+  .benefits_i {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 30px;
+  }
+  .benefits__item {
+    width: 100%;
+    height: -webkit-min-content;
+    height: -moz-min-content;
+    height: min-content;
+    margin: 0 auto;
+  }
+}
+
 .subscribe {
-  height: 448px;
+  height: 50vh;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.5)), to(rgba(255, 255, 255, 0.5))), url(../img/subs.jpg) no-repeat;
   background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url(../img/subs.jpg) no-repeat;
   background-position: center;
@@ -582,6 +677,25 @@ body {
   background-color: #F16D7F;
   color: #FFFFFF;
   border-radius: 0 30px 30px 0;
+}
+
+@media (max-width: 768px) and (min-width: 376px) {
+  .subscribe {
+    height: 60vh;
+    background-size: cover;
+  }
+  .subscribe_i {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .footer {
